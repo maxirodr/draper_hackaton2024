@@ -224,7 +224,7 @@ demo = {
       data: {
         labels: ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
         datasets: [{
-          label: "Data",
+          label: "Total consumption",
           borderColor: chartColor,
           pointBorderColor: chartColor,
           pointBackgroundColor: "#1e3d60",
@@ -316,9 +316,10 @@ demo = {
       type: 'line',
       responsive: true,
       data: {
-        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        //labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        labels: ["12pm", "2pm", "4pm", "6pm", "8pm", "10pm", "12am", "3am", "6am", "9am", "11am", "12am"],
         datasets: [{
-          label: "Active Users",
+          label: "watt/h stats",
           borderColor: "#f96332",
           pointBorderColor: "#FFF",
           pointBackgroundColor: "#f96332",
@@ -352,7 +353,7 @@ demo = {
       data: {
         labels: ["12pm,", "3pm", "6pm", "9pm", "12am", "3am", "6am", "9am"],
         datasets: [{
-          label: "Email Stats",
+          label: "watt/h Stats",
           borderColor: "#18ce0f",
           pointBorderColor: "#FFF",
           pointBackgroundColor: "#18ce0f",
@@ -363,7 +364,7 @@ demo = {
           fill: true,
           backgroundColor: gradientFill,
           borderWidth: 2,
-          data: [40, 500, 650, 700, 1200, 1250, 1300, 1900]
+          data: [40, 500, 650, 700, 1200, 1250, 1300, 1130]
         }]
       },
       options: gradientChartOptionsConfigurationWithNumbersAndGrid
@@ -380,7 +381,7 @@ demo = {
       data: {
         labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
         datasets: [{
-          label: "Active Countries",
+          label: "watts/month",
           backgroundColor: gradientFill,
           borderColor: "#2CA8FF",
           pointBorderColor: "#FFF",
@@ -445,7 +446,7 @@ demo = {
     var viewsChart = new Chart(e, a);
   },
 
-  initGoogleMaps: function() {
+  /*initGoogleMaps: function() {
     var myLatlng = new google.maps.LatLng(40.748817, -73.985428);
     var mapOptions = {
       zoom: 13,
@@ -578,5 +579,5 @@ demo = {
 
     // To add the marker to the map, call setMap();
     marker.setMap(map);
-  }
+  }*/
 };
